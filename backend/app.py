@@ -24,7 +24,9 @@ bcrypt = Bcrypt(app)
 app.config['JWT_SECRET_KEY'] = 'chave-super-secreta'
 jwt = JWTManager(app)
 
-client = MongoClient('mongodb://localhost:27017/')
+#alteração de mongodb local para mongodb atlas
+MONGO_URI = os.environ.get("MONGO_URI")
+client = MongoClient(MONGO_URI)
 db = client['watermark']
 collectionImagesLogs = db['imagesLogs']
 collectionUsers = db['users']
