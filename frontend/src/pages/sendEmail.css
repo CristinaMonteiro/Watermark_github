@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-recover-nif {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 8vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-recover-nif {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.form-recover-nif {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.recover-nif-input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.recover-nif-button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recover-nif-button:hover {
+  background-color: #555;
+}
+
+.success-message,
+.error-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 480px) {
+  .container-recover-nif {
+    padding: 1rem;
+  }
+
+  .card-recover-nif {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .recover-nif-input,
+  .recover-nif-button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+}
